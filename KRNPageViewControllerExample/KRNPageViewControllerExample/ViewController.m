@@ -32,7 +32,7 @@
     
     self.pageViewController.pagesCount = _textArray.count;
     self.pageViewController.initialIndex = 1;
-    // pageViewController.embeddedPageControl = YES;  //uncomment if you want to enable embeddedPageControl
+    // self.pageViewController.embeddedPageControl = YES;  //uncomment if you want to enable embeddedPageControl
     self.pageViewController.controllerDelegate = self;
     
     [self.pageControl setCurrentPage:_pageViewController.initialIndex];
@@ -52,7 +52,7 @@
 }
 
 - (void)viewControllerWithIndexPresented:(NSInteger)index {
-    [_pageControl setCurrentPage:index];
+    [self.pageControl setCurrentPage:index];
 }
 
 @end

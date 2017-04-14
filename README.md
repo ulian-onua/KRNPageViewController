@@ -23,7 +23,7 @@ Write `#import "KRNPageViewController.h"` in files where you need to use KRNPage
 ```objc
 @property (strong, nonatomic) KRNPageViewController *pageViewController;
 ...
-_pageViewController = 
+self.pageViewController = 
 [KRNPageViewController createdAsEmbeddedToView:self.embeddedView 
 ofViewController:self];
 ```
@@ -32,9 +32,9 @@ where embeddedView is a view in subview's hieararchy of main view of ViewControl
 2.Than you must to **configure instance KRNPageViewController using its properties**:
 
 ```objc
-pageViewController.pagesCount = 3; // number of pages
-pageViewController.initialIndex = 0; //initial page index from which presentation of KRNPageViewController will start
-pageViewController.embeddedPageControl = YES; // optional - use embedded page controller (NO - by default)
+self.pageViewController.pagesCount = 3; // number of pages
+self.pageViewController.initialIndex = 0; //initial page index from which presentation of KRNPageViewController will start
+self.pageViewController.embeddedPageControl = YES; // optional - use embedded page control (NO - by default)
 ```
 
 3.**Implement KRNPageViewControllerDelegate protocol and assign instance that implements mentioned protocol to controllerDelegate property** of KRNPageViewController.
