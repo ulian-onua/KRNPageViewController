@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440200A71E9F8C7600AED2AF /* panoramaOdessa_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 440200A41E9F8C7600AED2AF /* panoramaOdessa_01.png */; };
+		440200A81E9F8C7600AED2AF /* panoramaOdessa_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 440200A51E9F8C7600AED2AF /* panoramaOdessa_02.png */; };
+		440200A91E9F8C7600AED2AF /* panoramaOdessa_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 440200A61E9F8C7600AED2AF /* panoramaOdessa_03.png */; };
+		440200AD1E9F8CA500AED2AF /* ODSPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440200AC1E9F8CA500AED2AF /* ODSPageContentViewController.m */; };
+		446AC30F1E3CD9450093207A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC30E1E3CD9450093207A /* main.m */; };
+		446AC3121E3CD9450093207A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3111E3CD9450093207A /* AppDelegate.m */; };
+		446AC3151E3CD9450093207A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3141E3CD9450093207A /* ViewController.m */; };
+		446AC3181E3CD9450093207A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446AC3161E3CD9450093207A /* Main.storyboard */; };
+		446AC31A1E3CD9450093207A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446AC3191E3CD9450093207A /* Assets.xcassets */; };
+		446AC31D1E3CD9450093207A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446AC31B1E3CD9450093207A /* LaunchScreen.storyboard */; };
+		446AC3261E3CD9640093207A /* KRNPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3251E3CD9640093207A /* KRNPageViewController.m */; };
+		446AC3291E3CE3C30093207A /* ADMWelcomePageUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3281E3CE3C30093207A /* ADMWelcomePageUnitViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		440200A41E9F8C7600AED2AF /* panoramaOdessa_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panoramaOdessa_01.png; sourceTree = "<group>"; };
+		440200A51E9F8C7600AED2AF /* panoramaOdessa_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panoramaOdessa_02.png; sourceTree = "<group>"; };
+		440200A61E9F8C7600AED2AF /* panoramaOdessa_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panoramaOdessa_03.png; sourceTree = "<group>"; };
+		440200AB1E9F8CA500AED2AF /* ODSPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODSPageContentViewController.h; sourceTree = "<group>"; };
+		440200AC1E9F8CA500AED2AF /* ODSPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODSPageContentViewController.m; sourceTree = "<group>"; };
+		440200AE1E9FB9EB00AED2AF /* KRNPageUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNPageUnitViewController.h; path = ../../KRNPageViewController/KRNPageUnitViewController.h; sourceTree = "<group>"; };
+		446AC30A1E3CD9450093207A /* KRNPageViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRNPageViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		446AC30E1E3CD9450093207A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		446AC3101E3CD9450093207A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		446AC3111E3CD9450093207A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		446AC3131E3CD9450093207A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		446AC3141E3CD9450093207A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		446AC3171E3CD9450093207A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		446AC3191E3CD9450093207A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		446AC31C1E3CD9450093207A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		446AC31E1E3CD9450093207A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446AC3241E3CD9640093207A /* KRNPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNPageViewController.h; path = ../../KRNPageViewController/KRNPageViewController.h; sourceTree = "<group>"; };
+		446AC3251E3CD9640093207A /* KRNPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNPageViewController.m; path = ../../KRNPageViewController/KRNPageViewController.m; sourceTree = "<group>"; };
+		446AC3271E3CE3C30093207A /* ADMWelcomePageUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMWelcomePageUnitViewController.h; sourceTree = "<group>"; };
+		446AC3281E3CE3C30093207A /* ADMWelcomePageUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMWelcomePageUnitViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		446AC3071E3CD9450093207A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		440200AA1E9F8C7A00AED2AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				440200A41E9F8C7600AED2AF /* panoramaOdessa_01.png */,
+				440200A51E9F8C7600AED2AF /* panoramaOdessa_02.png */,
+				440200A61E9F8C7600AED2AF /* panoramaOdessa_03.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		446AC3011E3CD9440093207A = {
+			isa = PBXGroup;
+			children = (
+				446AC30C1E3CD9450093207A /* KRNPageViewControllerExample */,
+				446AC30B1E3CD9450093207A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446AC30B1E3CD9450093207A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				446AC30A1E3CD9450093207A /* KRNPageViewControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446AC30C1E3CD9450093207A /* KRNPageViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				440200AB1E9F8CA500AED2AF /* ODSPageContentViewController.h */,
+				440200AC1E9F8CA500AED2AF /* ODSPageContentViewController.m */,
+				446AC3271E3CE3C30093207A /* ADMWelcomePageUnitViewController.h */,
+				446AC3281E3CE3C30093207A /* ADMWelcomePageUnitViewController.m */,
+				446AC3241E3CD9640093207A /* KRNPageViewController.h */,
+				446AC3251E3CD9640093207A /* KRNPageViewController.m */,
+				440200AE1E9FB9EB00AED2AF /* KRNPageUnitViewController.h */,
+				446AC3101E3CD9450093207A /* AppDelegate.h */,
+				446AC3111E3CD9450093207A /* AppDelegate.m */,
+				446AC3131E3CD9450093207A /* ViewController.h */,
+				446AC3141E3CD9450093207A /* ViewController.m */,
+				446AC3161E3CD9450093207A /* Main.storyboard */,
+				440200AA1E9F8C7A00AED2AF /* Images */,
+				446AC3191E3CD9450093207A /* Assets.xcassets */,
+				446AC31B1E3CD9450093207A /* LaunchScreen.storyboard */,
+				446AC31E1E3CD9450093207A /* Info.plist */,
+				446AC30D1E3CD9450093207A /* Supporting Files */,
+			);
+			path = KRNPageViewControllerExample;
+			sourceTree = "<group>";
+		};
+		446AC30D1E3CD9450093207A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				446AC30E1E3CD9450093207A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		446AC3091E3CD9450093207A /* KRNPageViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446AC3211E3CD9450093207A /* Build configuration list for PBXNativeTarget "KRNPageViewControllerExample" */;
+			buildPhases = (
+				446AC3061E3CD9450093207A /* Sources */,
+				446AC3071E3CD9450093207A /* Frameworks */,
+				446AC3081E3CD9450093207A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRNPageViewControllerExample;
+			productName = KRNPageViewControllerExample;
+			productReference = 446AC30A1E3CD9450093207A /* KRNPageViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446AC3021E3CD9450093207A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ulian_onua;
+				TargetAttributes = {
+					446AC3091E3CD9450093207A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E8TPSF9L49;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 446AC3051E3CD9450093207A /* Build configuration list for PBXProject "KRNPageViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446AC3011E3CD9440093207A;
+			productRefGroup = 446AC30B1E3CD9450093207A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				446AC3091E3CD9450093207A /* KRNPageViewControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		446AC3081E3CD9450093207A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440200A81E9F8C7600AED2AF /* panoramaOdessa_02.png in Resources */,
+				446AC31D1E3CD9450093207A /* LaunchScreen.storyboard in Resources */,
+				440200A91E9F8C7600AED2AF /* panoramaOdessa_03.png in Resources */,
+				446AC31A1E3CD9450093207A /* Assets.xcassets in Resources */,
+				440200A71E9F8C7600AED2AF /* panoramaOdessa_01.png in Resources */,
+				446AC3181E3CD9450093207A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		446AC3061E3CD9450093207A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446AC3151E3CD9450093207A /* ViewController.m in Sources */,
+				446AC3291E3CE3C30093207A /* ADMWelcomePageUnitViewController.m in Sources */,
+				446AC3121E3CD9450093207A /* AppDelegate.m in Sources */,
+				446AC30F1E3CD9450093207A /* main.m in Sources */,
+				440200AD1E9F8CA500AED2AF /* ODSPageContentViewController.m in Sources */,
+				446AC3261E3CD9640093207A /* KRNPageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		446AC3161E3CD9450093207A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446AC3171E3CD9450093207A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		446AC31B1E3CD9450093207A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446AC31C1E3CD9450093207A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446AC31F1E3CD9450093207A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		446AC3201E3CD9450093207A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		446AC3221E3CD9450093207A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8TPSF9L49;
+				INFOPLIST_FILE = KRNPageViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ulian-onua.KRNPageViewControllerExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		446AC3231E3CD9450093207A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8TPSF9L49;
+				INFOPLIST_FILE = KRNPageViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ulian-onua.KRNPageViewControllerExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446AC3051E3CD9450093207A /* Build configuration list for PBXProject "KRNPageViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446AC31F1E3CD9450093207A /* Debug */,
+				446AC3201E3CD9450093207A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446AC3211E3CD9450093207A /* Build configuration list for PBXNativeTarget "KRNPageViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446AC3221E3CD9450093207A /* Debug */,
+				446AC3231E3CD9450093207A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446AC3021E3CD9450093207A /* Project object */;
+}
