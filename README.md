@@ -4,6 +4,11 @@ KRNPageViewController
 KRNPageViewController is a wrapper above UIPageViewController that simplifies its usage.
 
 
+## About
+Many aplications have so called Welcome Screens. Welcome Screen is a slider that is shown after first application launch or before user authorization/registration. The most popular solution of implementation of Welcome Screen is usage of UIPageViewController. Work with UIPageViewController from scratch requires performing typical, repeating operations of implementing methods of UIPageViewControllerDelegate and UIPageViewControllerDataSource.
+
+KRNPageViewController is written to simplify creation and set up of Welcome Screens in iOS, hiding work with default protocols under the hood.
+
 ## Installation
 ####CocoaPods
 

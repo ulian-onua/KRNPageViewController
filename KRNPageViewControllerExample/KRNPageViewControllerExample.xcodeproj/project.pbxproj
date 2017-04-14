@@ -18,7 +18,6 @@
 		446AC31A1E3CD9450093207A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446AC3191E3CD9450093207A /* Assets.xcassets */; };
 		446AC31D1E3CD9450093207A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446AC31B1E3CD9450093207A /* LaunchScreen.storyboard */; };
 		446AC3261E3CD9640093207A /* KRNPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3251E3CD9640093207A /* KRNPageViewController.m */; };
-		446AC3291E3CE3C30093207A /* ADMWelcomePageUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3281E3CE3C30093207A /* ADMWelcomePageUnitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +39,6 @@
 		446AC31E1E3CD9450093207A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		446AC3241E3CD9640093207A /* KRNPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNPageViewController.h; path = ../../KRNPageViewController/KRNPageViewController.h; sourceTree = "<group>"; };
 		446AC3251E3CD9640093207A /* KRNPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNPageViewController.m; path = ../../KRNPageViewController/KRNPageViewController.m; sourceTree = "<group>"; };
-		446AC3271E3CE3C30093207A /* ADMWelcomePageUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMWelcomePageUnitViewController.h; sourceTree = "<group>"; };
-		446AC3281E3CE3C30093207A /* ADMWelcomePageUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMWelcomePageUnitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +83,6 @@
 			children = (
 				440200AB1E9F8CA500AED2AF /* ODSPageContentViewController.h */,
 				440200AC1E9F8CA500AED2AF /* ODSPageContentViewController.m */,
-				446AC3271E3CE3C30093207A /* ADMWelcomePageUnitViewController.h */,
-				446AC3281E3CE3C30093207A /* ADMWelcomePageUnitViewController.m */,
 				446AC3241E3CD9640093207A /* KRNPageViewController.h */,
 				446AC3251E3CD9640093207A /* KRNPageViewController.m */,
 				440200AE1E9FB9EB00AED2AF /* KRNPageUnitViewController.h */,
@@ -189,7 +184,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				446AC3151E3CD9450093207A /* ViewController.m in Sources */,
-				446AC3291E3CE3C30093207A /* ADMWelcomePageUnitViewController.m in Sources */,
 				446AC3121E3CD9450093207A /* AppDelegate.m in Sources */,
 				446AC30F1E3CD9450093207A /* main.m in Sources */,
 				440200AD1E9F8CA500AED2AF /* ODSPageContentViewController.m in Sources */,
