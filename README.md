@@ -21,7 +21,9 @@ Write `#import "KRNPageViewController.h"` in files where you need to use KRNPage
 1.**Create a property of KRNPageViewController** and allocate its instance using next method:
 
 ```objc
-KRNPageViewController *pageViewController = 
+@property (strong, nonatomic) KRNPageViewController *pageViewController;
+...
+_pageViewController = 
 [KRNPageViewController createdAsEmbeddedToView:self.embeddedView 
 ofViewController:self];
 ```

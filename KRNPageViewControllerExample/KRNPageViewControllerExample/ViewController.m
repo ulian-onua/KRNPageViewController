@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSArray <NSString*> *textArray, *buttonTitlesArray, *imageNamesArray;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UIView *embeddedView;
+@property (strong, nonatomic) KRNPageViewController *pageViewController;
 @end
 
 @implementation ViewController
@@ -27,15 +28,14 @@
 
     _imageNamesArray = @[@"panoramaOdessa_01", @"panoramaOdessa_02", @"panoramaOdessa_03"];
     
-    KRNPageViewController *pageViewController = [KRNPageViewController createdAsEmbeddedToView:self.embeddedView ofViewController:self];
+    self.pageViewController = [KRNPageViewController createdAsEmbeddedToView:self.embeddedView ofViewController:self];
     
-    pageViewController.pagesCount = _textArray.count;
-    pageViewController.initialIndex = 1;
+    self.pageViewController.pagesCount = _textArray.count;
+    self.pageViewController.initialIndex = 1;
     // pageViewController.embeddedPageControl = YES;  //uncomment if you want to enable embeddedPageControl
-    pageViewController.controllerDelegate = self;
+    self.pageViewController.controllerDelegate = self;
     
-    [_pageControl setCurrentPage:pageViewController.initialIndex];
-
+    [self.pageControl setCurrentPage:_pageViewController.initialIndex];
 }
 
 #pragma mark - KRNPageViewControllerDelegate
