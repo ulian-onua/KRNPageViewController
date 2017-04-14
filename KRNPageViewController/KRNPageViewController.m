@@ -7,10 +7,9 @@
 //
 
 #import "KRNPageViewController.h"
-
+#import "UIViewController+KRNPageUnit.h"
 
 @implementation KRNPageViewController
-
 
 + (id)createdAsEmbeddedToView:(UIView *)view ofViewController:(UIViewController *)viewController {
     if (!view || !viewController) {
@@ -30,10 +29,17 @@
     [pageViewController didMoveToParentViewController:viewController];
     return pageViewController;
 }
+    
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.delegate = self;
+    self.dataSource = self;
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     UIViewController *startingViewController = [_controllerDelegate viewControllerAtIndex:_initialIndex];
+    startingViewController.pageIndex = @(_initialIndex);
     [self setViewControllers:@[startingViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
 }
 
@@ -50,29 +56,35 @@
     }
 
     UIViewController *unitViewController = [_controllerDelegate viewControllerAtIndex:index];
+    unitViewController.pageIndex = @(index);
     [self setViewControllers:@[unitViewController] direction:navigationDirection animated:YES completion:nil];
+}
+    
+- (void)setInitialIndex:(NSInteger)initialIndex {
+    if (initialIndex < self.pagesCount) {
+        _initialIndex = initialIndex;
+    } else {
+        _initialIndex = 0;
+    }
 }
 
 #pragma mark - UIPageViewControllerDataSource
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    if (![viewController respondsToSelector:@selector(pageIndex)]) {
-        return nil;
-    }
-    NSUInteger index = ((id<KRNPageUnitViewController>) viewController).pageIndex;
+    NSUInteger index = viewController.pageIndex.integerValue;
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
     index--;
-    return [_controllerDelegate viewControllerAtIndex:index];
+    UIViewController *vc = [_controllerDelegate viewControllerAtIndex:index];
+    vc.pageIndex = @(index);
+    return vc;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-    if (![viewController respondsToSelector:@selector(pageIndex)]) {
-        return nil;
-    }
     
-    NSUInteger index = ((id<KRNPageUnitViewController>) viewController).pageIndex;
+    NSUInteger index = viewController.pageIndex.integerValue;
+
     if (index == NSNotFound) {
         return nil;
     }
@@ -80,7 +92,9 @@
     if (index == _pagesCount) {
         return nil;
     }
-    return [_controllerDelegate viewControllerAtIndex:index];
+    UIViewController *vc = [_controllerDelegate viewControllerAtIndex:index];
+    vc.pageIndex = @(index);
+    return vc;
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
@@ -102,12 +116,8 @@
 #pragma mark - Helpers
 
 - (NSInteger)indexOfCurrentUnitViewController {
-    id<KRNPageUnitViewController> unitController = self.viewControllers.firstObject;
-    return unitController.pageIndex;
+    UIViewController * unitController = self.viewControllers.firstObject;
+    return unitController.pageIndex.integerValue;
 }
 
-@end
-
-@interface UIViewController (KRNUnitPageViewControllerIndex)
-@property (assign, nonatomic) NSInteger krnPageIndex;
 @end

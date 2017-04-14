@@ -11,16 +11,10 @@
 #import "ODSPageContentViewController.h"
 
 
-@interface ViewController () <KRNPageViewControllerDelegate> {
-    //NSArray <NSString*> *_imageNamesArray, *_titlesArray, *_textsArray;
- //   NSArray <NSString*> *_textArray, *_buttonTitlesArray, *_imageNamesArray;
-}
+@interface ViewController () <KRNPageViewControllerDelegate>
 @property (strong, nonatomic) NSArray <NSString*> *textArray, *buttonTitlesArray, *imageNamesArray;
-
-
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UIView *embeddedView;
-
 @end
 
 @implementation ViewController
@@ -36,25 +30,26 @@
     KRNPageViewController *pageViewController = [KRNPageViewController createdAsEmbeddedToView:self.embeddedView ofViewController:self];
     
     pageViewController.pagesCount = _textArray.count;
-    pageViewController.initialIndex = 0;
-    // pageViewController.embeddedPageControl = YES;
+    pageViewController.initialIndex = 1;
+    // pageViewController.embeddedPageControl = YES;  //uncomment if you want to enable embeddedPageControl
     pageViewController.controllerDelegate = self;
+    
+    [_pageControl setCurrentPage:pageViewController.initialIndex];
 
 }
 
-- (UIViewController<KRNPageUnitViewController> *)viewControllerAtIndex:(NSUInteger)index {
-    ODSPageContentViewController *unitVC = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([ODSPageContentViewController class])];
+#pragma mark - KRNPageViewControllerDelegate
     
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index {
+    ODSPageContentViewController *unitVC = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([ODSPageContentViewController class])];
     __weak typeof(self) weakSelf = self;
     __weak typeof(unitVC) weakUnitVC = unitVC;
     unitVC.initialBlock =^ {
         weakUnitVC.panoramaImageView.image = [UIImage imageNamed:weakSelf.imageNamesArray[index]];
         weakUnitVC.welcomeLabel.text = weakSelf.textArray[index];
     };
-    unitVC.pageIndex = index;
     return unitVC;
 }
-
 
 - (void)viewControllerWithIndexPresented:(NSInteger)index {
     [_pageControl setCurrentPage:index];

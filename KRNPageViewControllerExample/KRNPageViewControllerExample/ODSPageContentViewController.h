@@ -7,15 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KRNPageUnitViewController.h"
+//#import "KRNPageUnitViewController.h"
 
-@interface ODSPageContentViewController : UIViewController<KRNPageUnitViewController>
+@interface ODSPageContentViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *panoramaImageView;
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
-
-@property (assign, nonatomic) NSInteger pageIndex;
 
 @property (strong, nonatomic) void(^initialBlock)(void);
 @end

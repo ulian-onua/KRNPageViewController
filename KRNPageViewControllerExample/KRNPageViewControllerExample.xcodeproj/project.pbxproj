@@ -18,6 +18,7 @@
 		446AC31A1E3CD9450093207A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446AC3191E3CD9450093207A /* Assets.xcassets */; };
 		446AC31D1E3CD9450093207A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446AC31B1E3CD9450093207A /* LaunchScreen.storyboard */; };
 		446AC3261E3CD9640093207A /* KRNPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446AC3251E3CD9640093207A /* KRNPageViewController.m */; };
+		44B24D021EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B24D011EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,6 @@
 		440200A61E9F8C7600AED2AF /* panoramaOdessa_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panoramaOdessa_03.png; sourceTree = "<group>"; };
 		440200AB1E9F8CA500AED2AF /* ODSPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODSPageContentViewController.h; sourceTree = "<group>"; };
 		440200AC1E9F8CA500AED2AF /* ODSPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODSPageContentViewController.m; sourceTree = "<group>"; };
-		440200AE1E9FB9EB00AED2AF /* KRNPageUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNPageUnitViewController.h; path = ../../KRNPageViewController/KRNPageUnitViewController.h; sourceTree = "<group>"; };
 		446AC30A1E3CD9450093207A /* KRNPageViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRNPageViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446AC30E1E3CD9450093207A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		446AC3101E3CD9450093207A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +39,8 @@
 		446AC31E1E3CD9450093207A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		446AC3241E3CD9640093207A /* KRNPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNPageViewController.h; path = ../../KRNPageViewController/KRNPageViewController.h; sourceTree = "<group>"; };
 		446AC3251E3CD9640093207A /* KRNPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNPageViewController.m; path = ../../KRNPageViewController/KRNPageViewController.m; sourceTree = "<group>"; };
+		44B24D001EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KRNPageUnit.h"; path = "../../KRNPageViewController/UIViewController+KRNPageUnit.h"; sourceTree = "<group>"; };
+		44B24D011EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KRNPageUnit.m"; path = "../../KRNPageViewController/UIViewController+KRNPageUnit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 				440200AC1E9F8CA500AED2AF /* ODSPageContentViewController.m */,
 				446AC3241E3CD9640093207A /* KRNPageViewController.h */,
 				446AC3251E3CD9640093207A /* KRNPageViewController.m */,
-				440200AE1E9FB9EB00AED2AF /* KRNPageUnitViewController.h */,
+				44B24D001EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.h */,
+				44B24D011EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.m */,
 				446AC3101E3CD9450093207A /* AppDelegate.h */,
 				446AC3111E3CD9450093207A /* AppDelegate.m */,
 				446AC3131E3CD9450093207A /* ViewController.h */,
@@ -186,6 +189,7 @@
 				446AC3151E3CD9450093207A /* ViewController.m in Sources */,
 				446AC3121E3CD9450093207A /* AppDelegate.m in Sources */,
 				446AC30F1E3CD9450093207A /* main.m in Sources */,
+				44B24D021EA1049D00FEBDE2 /* UIViewController+KRNPageUnit.m in Sources */,
 				440200AD1E9F8CA500AED2AF /* ODSPageContentViewController.m in Sources */,
 				446AC3261E3CD9640093207A /* KRNPageViewController.m in Sources */,
 			);

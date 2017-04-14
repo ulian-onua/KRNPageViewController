@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KRNPageUnitViewController.h"
 
 @protocol KRNPageViewControllerDelegate;
-@protocol KRNPageUnitViewController;
 
 @interface KRNPageViewController : UIPageViewController<UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
@@ -27,9 +25,9 @@
 
 @protocol KRNPageViewControllerDelegate<NSObject>
 @required
-- (UIViewController<KRNPageUnitViewController> *)viewControllerAtIndex:(NSUInteger)index;  //implement this method to return appropriate view controller for index.
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index;  //implement this method to return appropriate view controller for index.
 @optional
-- (void)viewControllerWithIndexPresented:(NSInteger)index; //implement this method to handle event of presenting viewControllerWithIndex
+- (void)viewControllerWithIndexPresented:(NSInteger)index; //implement this method to handle event of presenting unit view controller with index
 @end
 
 
