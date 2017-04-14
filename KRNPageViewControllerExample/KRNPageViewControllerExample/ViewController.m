@@ -51,10 +51,7 @@
         weakUnitVC.panoramaImageView.image = [UIImage imageNamed:weakSelf.imageNamesArray[index]];
         weakUnitVC.welcomeLabel.text = weakSelf.textArray[index];
     };
-    
-
     unitVC.pageIndex = index;
-    
     return unitVC;
 }
 

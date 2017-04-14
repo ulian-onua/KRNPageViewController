@@ -29,8 +29,7 @@
 @required
 - (UIViewController<KRNPageUnitViewController> *)viewControllerAtIndex:(NSUInteger)index;  //implement this method to return appropriate view controller for index.
 @optional
-- (void)viewControllerWithIndexPresented:(NSInteger)index; //implement this method if
-
+- (void)viewControllerWithIndexPresented:(NSInteger)index; //implement this method to handle event of presenting viewControllerWithIndex
 @end
 
 

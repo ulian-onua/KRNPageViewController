@@ -8,10 +8,6 @@
 
 #import "ODSPageContentViewController.h"
 
-@interface ODSPageContentViewController ()
-
-@end
-
 @implementation ODSPageContentViewController
 
 - (void)viewDidLoad {
